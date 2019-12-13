@@ -23,6 +23,7 @@
  */
 package org.riversun.bigdoc.bin;
 
+import android.os.Build;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -46,7 +47,7 @@ import org.riversun.finbin.BigBinarySearcher;
  */
 public class BinFileSearcher {
 
-	private static final boolean USE_NIO = true;
+	private static final boolean USE_NIO = Build.VERSION.SDK_INT >= Build.VERSION_CODES.O;
 
 	/**
 	 * Default size to be read into memory at one search
