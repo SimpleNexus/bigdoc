@@ -23,7 +23,7 @@ ext {
 }
 
 publish {
-    userOrg = 'SimpleNexus'
+    userOrg = 'simplenexus'
     repoName = 'bigdoc'
     groupId = 'com.simplenexus'
     artifactId = 'bigdoc'
