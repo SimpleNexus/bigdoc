@@ -35,6 +35,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
 
 import org.riversun.finbin.BigBinarySearcher;
@@ -531,7 +532,7 @@ public class BinFileSearcher {
 
 	protected void sort(List<Long> list) {
 
-		list.sort(new Comparator<Long>() {
+		Collections.sort(list, new Comparator<Long>() {
 
 			public int compare(Long num1, Long num2) {
 				if (num1 > num2) {
