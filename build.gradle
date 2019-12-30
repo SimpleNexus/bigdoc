@@ -19,7 +19,7 @@ repositories {
 }
 
 ext {
-    VERSION = '0.3.0-sn2'
+    VERSION = '0.3.0-sn3'
 }
 
 publish {
